@@ -4,4 +4,4 @@
 <img src="PigGameRules.jpg" width="100%">
 
 
-Project is from Udemy "JavaScript Complete Course".
+Project is made with Udemy "JavaScript Complete Course".
