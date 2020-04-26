@@ -9,14 +9,6 @@ GAME RULES:
 var scores, roundScore, activePlayer, gamePlaying, diceTwiceSix, winningScore;
 init();
 winningScore = 100;
-// document object give us access to DOM
-//document.querySelector('#current-' + activePlayer).textContent = dice;
-//document.querySelector('#current-' + activePlayer).innerHTML = '<em>' + dice + '</em>';
-
-//var x = document.querySelector('#score-0').textContent;
-//console.log(x);
-
-//document.querySelector('.dice').style.display = 'none';
 
 document.querySelector('.btn-roll').addEventListener('click', function () {
 	if (gamePlaying) {
@@ -49,7 +41,7 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
 	if (gamePlaying) {
 		// add current score to Global Score
 		scores[activePlayer] += roundScore;
-		// Update UI to 
+		// Update UI 
 		document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
 		// Check if player won the game
 		if (scores[activePlayer] >= winningScore) {
@@ -78,8 +70,7 @@ function nextPlayer() {
 	document.querySelector('.player-0-panel').classList.toggle('active');
 	document.querySelector('.player-1-panel').classList.toggle('active');
 
-	//document.querySelector('.player-0-panel').classList.remove('active');
-	//document.querySelector('.player-1-panel').classList.add('active');
+
 	document.querySelector('.dice').style.display = 'none';
 	document.querySelector('.dice-0').style.display = 'none';
 }
