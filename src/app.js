@@ -17,13 +17,13 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
 		// Display the result 
 		var diceDOM = document.querySelector('.dice');
 		diceDOM.style.display = 'block';
-		diceDOM.src = 'dice-' + dice + '.png';
+		diceDOM.src = '../assets/images/dice-' + dice + '.png';
 
 		//Second dice
 		var diceTwo = Math.floor(Math.random() * 6) + 1;
 		var diceTwoDOM = document.querySelector('.dice-0');
 		diceTwoDOM.style.display = 'block';
-		diceTwoDOM.src = 'dice-' + diceTwo + '.png';
+		diceTwoDOM.src = '../assets/images/dice-' + diceTwo + '.png';
 
 		// update round score IF the rolled number was NOT 1
 		if (dice == 1 || diceTwo == 1) {
