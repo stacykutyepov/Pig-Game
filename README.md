@@ -1,7 +1,5 @@
-# Pig-Game
-Pig Game
+# Hello! Welcome to the Pig-Game!
 
-Hello! Welcome to the Pig Game!
 
 <img src="PigGameRules.jpg" width="100%">
 
